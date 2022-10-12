@@ -1,0 +1,62 @@
+#tl-app, #app
+    --transition-long: .3s ease-in-out
+    --transition-default: .2s ease-in-out
+    --transition-short: .1s ease-in-out
+
+@keyframes shake
+    10%, 90%
+        transform: translate3d(-1px, 0, 0)
+    
+    20%, 80%
+        transform: translate3d(2px, 0, 0)
+
+    30%, 50%, 70%
+        transform: translate3d(-4px, 0, 0)
+
+    40%, 60%
+        transform: translate3d(4px, 0, 0)
+
+.animation-shake
+    animation: shake 0.52s cubic-bezier(.36,.07,.19,.97) both .32s
+// FADE-1
+    
+.fade-1-enter-active
+    transition: all .2s ease-in-out
+
+.fade-1-enter-from
+    opacity: 0
+
+.fade-1-enter-to
+    opacity: 1
+
+.fade-1-leave-active 
+    transition: all .2s ease-in-out
+
+.fade-1-leave-from
+    opacity: 1
+
+.fade-1-leave-to 
+    opacity: 0
+
+
+// FADE-SLIDE-Y-1
+    
+.fade-slide-y-1-enter-active
+    transition: all .2s ease-in-out
+
+.fade-slide-y-1-enter-from
+    opacity: 0
+    transform: translateY(20px)
+
+.fade-slide-y-1-enter-to
+    opacity: 1
+
+.fade-slide-y-1-leave-active 
+    transition: all .2s ease-in-out
+
+.fade-slide-y-1-leave-from
+    opacity: 1
+
+.fade-slide-y-1-leave-to 
+    opacity: 0
+    transform: translateY(-20px)

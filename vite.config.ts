@@ -24,7 +24,6 @@ export default defineConfig({
       imports: ['vue', 'vue-router', '@vueuse/head', '@vueuse/core'],
       dts: 'src/auto-imports.d.ts',
       dirs: ['src/composables', 'src/store'],
-      vueTemplate: true
     })
   ]
 })

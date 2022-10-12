@@ -1,0 +1,18 @@
+// RRIPLE DIRECTIVE
+.ripple-parent
+    position: relative !important
+    overflow: hidden !important
+
+.ripple 
+    width: 2px
+    height: 2px
+    position: absolute
+    border-radius: 50%
+    animation: rippleEffect 0.5s linear
+
+@keyframes rippleEffect 
+    0% 
+        transform: scale(1)
+    100% 
+        opacity: 0
+        transform: scale(var(--scale))

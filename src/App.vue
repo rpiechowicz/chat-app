@@ -1,17 +1,21 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="app">
-    <transition name="fade" mode="out-in">
+  <div id="chat-app">
+    <transition mode="out-in">
       <router-view />
     </transition>
   </div>
 </template>
 
-<style lang="sass" scoped>
-.fade-enter-active, .fade-leave-active
-  transition: opacity .3s
+<style lang="sass">
+.v-enter-active,.v-leave-active
+  transition: opacity .5s ease
 
-.fade-enter, .fade-leave-to
+.v-enter-from,.v-leave-to
   opacity: 0
+
+#chat-app
+  height: 100vh
+  width: 100vw
 </style>
